@@ -86,7 +86,6 @@ export const CropSelector: React.FC<CropSelectorProps> = ({ data, onCropSelect, 
 
     const periods: WeatherPeriod[] = Object.entries(periodMap).map(([periodId, entry]) => {
       const area = entry.area;
-      console.log(entry.period_name)
       return {
         period_id: Number(periodId),
         date_start: null,
