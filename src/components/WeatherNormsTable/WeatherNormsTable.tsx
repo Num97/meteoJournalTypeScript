@@ -20,7 +20,7 @@ const startEditing = (norm: Norm) => {
 const handleInputChange = (field: string, value: string) => {
   setEditedValues(prev => ({
     ...prev,
-    [field]: field === 'period_name' ? value : Number(value),
+    [field]: field === 'period_nam' ? value : Number(value),
   }));
 };
 
