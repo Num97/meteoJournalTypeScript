@@ -1,0 +1,63 @@
+.tableContainer {
+  overflow-x: auto;
+  background-color: #48c559;
+  border-radius: 12px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.06);
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.table thead {
+    background-color: rgb(255 146 95);
+}
+
+.table tbody {
+    background-color: rgb(255 200 133);
+}
+
+.progressCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressInner {
+  height: 100%;
+  border-radius: 4px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: fillBar 1s ease-out forwards;
+}
+
+@keyframes fillBar {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.tableRow {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.tableRow:hover {
+  background-color: #71c571;
+}
+
+.selectedRow {
+  background-color: #b3a6fd;
+}

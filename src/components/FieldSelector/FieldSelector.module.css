@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  gap: 24px;
+  padding: 16px;
+}
+
+.sidebar {
+  flex: 1;
+}
+
+.main {
+  flex: 2;
+  max-width: 50%;
+}

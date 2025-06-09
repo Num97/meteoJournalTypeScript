@@ -1,0 +1,23 @@
+.cropSelector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .cropCard {
+    padding: 12px 20px;
+    background-color: #48c559;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+    min-width: 680px;
+  }
+  
+  .cropCard:hover {
+    background-color: #47d159;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  

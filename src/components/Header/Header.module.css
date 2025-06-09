@@ -1,0 +1,77 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgb(51, 51, 51);
+  padding: 1rem;
+  z-index: 1000;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: 45px;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.seasonLable {
+  color: white;
+  font-size: 20px;
+}
+
+.seasonSelector {
+  align-items: center;
+  margin-left: auto;
+}
+
+.select {
+  padding: 0.4rem 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.select:focus {
+  border-color: #4caf50;
+  background-color: #fff;
+}
+
+.backWithCrop {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selectedCrop {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #f8f8f8;
+}
+
+.backButton{
+  width: 250px;
+}
+
+.backButton:hover{
+  background-color: rgb(255, 226, 130);
+}
+
+.settingsButton:hover{
+  background-color: rgb(183, 208, 255);
+}
+
+.filterButton, .backButton, .settingsButton {
+  margin-left: 12px;
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #eef;
+  border: 1px solid #99c;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filterButton:hover {
+  background-color: rgb(104, 255, 129);
+}
